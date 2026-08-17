@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>რეგისტრაცია</h1>
+        <p class="subtitle">ყურადღებით შეავსეთ თითოეული ველი</p>
+        <div class="successBanner" id="successBanner">
+            რეგისტრაცია წარმატებით შესრულდა!
+        </div>
+        <form id="registrationForm" novalidate>
+            <div class="field">
+                <label for="name">სახელი</label>
+                <input type="text" id="name" placeholder="შეიყვანეთ ლათინური ასოებით, მაგ: Lika">
+                <div class="msg" id="nameMsg"></div>
+            </div>
+            <div class="field">
+                <label for="name">მეილი</label>
+                <input type="text" id="email" placeholder="user@example.com">
+                <div class="msg" id="emailMsg"></div>
+            </div>
+            <div class="field">
+                <label for="name">ტელეფონის ნომერი</label>
+                <input type="text" id="phone" placeholder="5XX XXX XXX">
+                <div class="msg" id="phoneMsg"></div>
+            </div>
+            <div class="field">
+                <label for="name">პაროლი</label>
+                <input type="text" id="pass" placeholder="შეიყვანეთ პაროლი">
+                <div class="msg" id="passMsg"></div>
+            </div>
+            <button class="submitBtn" id="submitBtn">რეგისტრაცია</button>
+        </form>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
